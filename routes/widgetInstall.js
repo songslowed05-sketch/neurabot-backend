@@ -202,9 +202,9 @@ router.get(
          API URL
       ----------------------------------------- */
 
-      const apiUrl =
-        process.env.PUBLIC_API_URL ||
-        "http://localhost:5000";
+     const apiUrl =
+  process.env.PUBLIC_API_URL ||
+  "https://neurabot-backend-ai-2335.vercel.app";
 
       /* -----------------------------------------
          INSTALLATION SNIPPET

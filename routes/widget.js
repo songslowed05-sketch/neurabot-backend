@@ -478,10 +478,9 @@ router.get("/code", async (req, res) => {
     ===================================================== */
 
     const apiUrl =
-      process.env.PUBLIC_API_URL ||
-      process.env.API_URL ||
-      "http://localhost:5000";
-
+  process.env.PUBLIC_API_URL ||
+  process.env.API_URL ||
+  "https://neurabot-backend-ai-2335.vercel.app";
     /* =====================================================
        WIDGET SCRIPT
     ===================================================== */

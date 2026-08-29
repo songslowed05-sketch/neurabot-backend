@@ -281,9 +281,9 @@ window.NEURA_BOT_BUSINESS_ID = "${businessId}";
 function generateInstallationDetails(
   businessId
 ) {
-  const backendUrl =
-    process.env.BACKEND_PUBLIC_URL ||
-    "http://localhost:5000";
+ const backendUrl =
+  process.env.BACKEND_PUBLIC_URL ||
+  "https://neurabot-backend-ai-2335.vercel.app";
 
   return {
     title: "NeuraBot Website Installation",
