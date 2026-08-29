@@ -261,18 +261,18 @@ async function getPlanFromPayment(payment) {
    GENERATE CHATBOT INSTALLATION CODE
 ========================================================= */
 
-function generateWidgetInstallationCode(
-  businessId
-) {
+function generateWidgetInstallationCode(businessId) {
   const backendUrl =
-  process.env.BACKEND_PUBLIC_URL ||
-  "https://neurabot-backend-ai-2335.vercel.app";
-  return `<script>
-window.NEURA_BOT_BUSINESS_ID = "${businessId}";
-</script>
-<script src="${backendUrl}/widget/neura-bot.js" defer></script>`;
-}
+    process.env.BACKEND_PUBLIC_URL ||
+    "https://neurabot-backend-ai-2335.vercel.app";
 
+  return `<script
+  src="${backendUrl}/widget/neura-bot.js"
+  data-neura-business="${businessId}"
+  data-neura-api="${backendUrl}"
+  defer
+></script>`;
+}
 /* =========================================================
    GENERATE INSTALLATION DETAILS
 ========================================================= */
