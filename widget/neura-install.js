@@ -12,8 +12,8 @@
     script.getAttribute("data-business-id");
 
   const apiUrl =
-  script.getAttribute("data-api") ||
-  "https://neurabot-backend-ai-2335.vercel.app";
+    script.getAttribute("data-api") ||
+    "https://neurabot-backend-ai-2335.vercel.app";
 
   if (!businessId) {
     console.error(
