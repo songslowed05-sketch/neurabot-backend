@@ -265,9 +265,8 @@ function generateWidgetInstallationCode(
   businessId
 ) {
   const backendUrl =
-    process.env.BACKEND_PUBLIC_URL ||
-    "http://localhost:5000";
-
+  process.env.BACKEND_PUBLIC_URL ||
+  "https://neurabot-backend-ai-2335.vercel.app";
   return `<script>
 window.NEURA_BOT_BUSINESS_ID = "${businessId}";
 </script>
