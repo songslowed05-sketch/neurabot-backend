@@ -19,9 +19,9 @@
       "data-neura-business"
     );
 
-  const apiUrl =
-    script.getAttribute("data-neura-api") ||
-    "http://localhost:5000";
+ const apiUrl =
+  script.getAttribute("data-neura-api") ||
+  "https://neurabot-backend-ai-2335.vercel.app";
 
   if (!businessId) {
     console.error(
